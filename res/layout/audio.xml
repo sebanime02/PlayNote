@@ -52,28 +52,14 @@
         android:text="@string/Reproducir" 
         android:src="@drawable/btnplay"/>
 
-<TextView
-    android:id="@+id/tvtitulo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/button3"
-    android:layout_marginRight="30dp"
-    android:layout_marginTop="20dp"
-    android:layout_toLeftOf="@+id/button3"
-    android:text="@string/Titulo"
-    android:textColor="@color/azul_oscuro"
-    
-     />
-
 <EditText
     android:id="@+id/edtitulo"
-    android:layout_width="40dp"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_alignBottom="@+id/tvtitulo"
-    android:layout_alignLeft="@+id/textView1"
+    android:layout_alignLeft="@+id/button3"
     android:layout_alignRight="@+id/button1"
     android:background="@color/naranja"
-    android:ems="10"
     android:inputType="text" />
 
 <TextView
@@ -85,11 +71,12 @@
     android:layout_marginTop="24dp"
     android:layout_toLeftOf="@+id/button3"
     android:text="@string/categoria"
+    android:textColor="@color/azul_oscuro"
      />
 
 <EditText
     android:id="@+id/edtcategoria"
-    android:layout_width="40dp"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignLeft="@+id/edtitulo"
     android:layout_alignRight="@+id/edtitulo"
@@ -98,13 +85,24 @@
     android:ems="10"
     android:inputType="text" />
 
+<TextView
+    android:id="@+id/tvtitulo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/textView1"
+    android:layout_below="@+id/button3"
+    android:layout_marginRight="28dp"
+    android:layout_marginTop="27dp"
+    android:text="@string/Titulo"
+    android:textColor="@color/azul_oscuro" />
+
 <Button
     android:id="@+id/Guardar"
-    android:layout_width="80dp"
-    android:layout_height="wrap_content"
-    android:layout_alignLeft="@+id/button3"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignRight="@+id/textView1"
     android:layout_below="@+id/edtcategoria"
-    android:layout_marginTop="17dp"
+    android:layout_marginTop="39dp"
     android:background="@color/azul_oscuro"
     android:contentDescription="@string/descripcion"
     android:onClick="Guardar"

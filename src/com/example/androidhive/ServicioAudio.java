@@ -150,10 +150,12 @@ public class ServicioAudio extends Activity implements OnCompletionListener
 	
 	public void Guardar(View v) throws IOException{
 	
-        String fechahora = getDatePhone();
+        
 		
-		Resul.setText(fechahora);
-		
+		String fecha = getDatePhone();
+		String hora = getHora();
+        
+	
 		
 		String titulo = (String) getText(R.id.tvtitulo);
 		
@@ -169,6 +171,16 @@ public class ServicioAudio extends Activity implements OnCompletionListener
 		
 		
 	}
+	private String getHora(){
+		
+		Date dt = new Date();
+    	SimpleDateFormat dh = new SimpleDateFormat("HH:mm:ss");
+    	String formatteHour = dh.format(dt.getTime());
+		return formatteHour;
+	}
+	
+	
+	
 	private String getDatePhone()
 
 	{
