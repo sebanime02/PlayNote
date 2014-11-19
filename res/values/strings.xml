@@ -4,4 +4,5 @@
     <string name="hello">Hello World, AndroidDashboard!</string>
     <string name="app_name">AndroidLoginAndRegistrationWithMySQLPHPSQLite</string>
 <string name="PlayNote">PlayNote</string>
+
 </resources>

@@ -10,12 +10,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.androidhive.library.UserFunctions;
+
 
 public class DashboardActivity extends Activity {
 	UserFunctions userFunctions;
 	Button btnLogout;
+	ImageButton btn_not, btn_pla, btn_histor;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +29,11 @@ public class DashboardActivity extends Activity {
         // Check login status in database
         userFunctions = new UserFunctions();
         if(userFunctions.isUserLoggedIn(getApplicationContext())){
-        	setContentView(R.layout.dashboard);
+        	setContentView(R.layout.activity_main);
+        	btn_not=(ImageButton) findViewById(R.id.btn_nota);
+    		btn_pla=(ImageButton) findViewById(R.id.btn_play);
+    		btn_histor= (ImageButton) findViewById(R.id.btn_history);
+    		
         	btnLogout = (Button) findViewById(R.id.btnLogout);
         	
         	btnLogout.setOnClickListener(new View.OnClickListener() {

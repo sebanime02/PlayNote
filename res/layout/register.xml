@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#3b3b3b" >
+    android:background="#F19A03" >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -16,12 +16,14 @@
             android:layout_marginBottom="10dip"
             android:text="REGISTER"
             android:textSize="25dip"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#1E3359" />
         <!--  Name Label -->
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Full Name" />
+            android:text="Full Name" 
+            android:textColor="#1E3359"/>
 		<!--  Name TextField -->
         <EditText
             android:id="@+id/registerName"
@@ -32,7 +34,9 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Email" />
+            android:text="Email" 
+            android:textColor="#1E3359"
+            />
 		<!--  Email TextField -->
         <EditText
             android:id="@+id/registerEmail"
@@ -44,7 +48,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dip"
-            android:text="Password" />
+            android:text="Password"
+            android:textColor="#1E3359" />
 		<!--  Password TextField -->
         <EditText
             android:id="@+id/registerPassword"
@@ -64,9 +69,11 @@
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="20dip"
-            android:text="Register" />
+            android:text="Register" 
+            android:textColor="#ffffff"
+            android:background="#1E3359"/>
 
         <!--  Link to Login Screen -->
         <Button
@@ -75,8 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
             android:background="@null"
-            android:text="Already registred. Login Me!"
-            android:textColor="#21dbd4"
+            android:text="Ya Estas Registrado ,logeate¡"
+            android:textColor="#1E3359"
             android:textStyle="bold" />
     </LinearLayout>
 
