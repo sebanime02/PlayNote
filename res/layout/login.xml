@@ -36,7 +36,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dip"
-            android:text="Password" 
+            android:text="Contraseña" 
             android:textColor="#1E3359"/>
 		<!--  Password TextField -->
         <EditText
@@ -62,7 +62,7 @@
             android:layout_marginTop="20dip"
             android:layout_weight="0.33"
             android:background="#1E3359"
-            android:text="Login"
+            android:text="Ingresar"
             android:textColor="#FFFFFF" />
 
         <!--  Link to Registration Screen -->
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
             android:background="@null"
-            android:text=" Register "
+            android:text=" Registrarse "
             android:textColor="#1E3359"
             android:textStyle="bold" />
 

@@ -4,5 +4,12 @@
     <string name="hello">Hello World, AndroidDashboard!</string>
     <string name="app_name">AndroidLoginAndRegistrationWithMySQLPHPSQLite</string>
 <string name="PlayNote">PlayNote</string>
-
+<string name="descripcion"></string>
+   <string name="Estado">Estado</string>
+   <string name="Grabar">Grabar</string>
+   <string name="Detener">Detener</string>
+   <string name="Reproducir">Reproducir</string>
+   <string name="Titulo">Titulo</string>
+   <string name="categoria">Categoria</string>
+   <string name="Guardar">Guardar</string>
 </resources>

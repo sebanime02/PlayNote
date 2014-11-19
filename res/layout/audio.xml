@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:background="@color/blanco">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Estado"
+        android:textColor="@color/azul_oscuro"
+        
+        />
+
+    <ImageButton
+        android:background="@color/blanco"
+        android:contentDescription="@string/descripcion"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:onClick="grabar"
+        android:text="@string/Grabar"
+        android:src="@drawable/grabador" />
+
+    <ImageButton
+        android:background="@color/blanco"
+        android:contentDescription="@string/descripcion"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:onClick="detener"
+        android:text="@string/Detener"
+        android:src="@drawable/btnpause" />
+
+    <ImageButton
+        android:background="@color/blanco"
+        android:contentDescription="@string/descripcion"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="reproducir"
+        android:text="@string/Reproducir" 
+        android:src="@drawable/btnplay"/>
+
+<TextView
+    android:id="@+id/tvtitulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button3"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+    android:layout_toLeftOf="@+id/button3"
+    android:text="@string/Titulo"
+    android:textColor="@color/azul_oscuro"
+    
+     />
+
+<EditText
+    android:id="@+id/edtitulo"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tvtitulo"
+    android:layout_alignLeft="@+id/textView1"
+    android:layout_alignRight="@+id/button1"
+    android:background="@color/naranja"
+    android:ems="10"
+    android:inputType="text" />
+
+<TextView
+    android:id="@+id/tvcategoria"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/tvtitulo"
+    android:layout_below="@+id/tvtitulo"
+    android:layout_marginTop="24dp"
+    android:layout_toLeftOf="@+id/button3"
+    android:text="@string/categoria"
+     />
+
+<EditText
+    android:id="@+id/edtcategoria"
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/edtitulo"
+    android:layout_alignRight="@+id/edtitulo"
+    android:layout_alignTop="@+id/tvcategoria"
+    android:background="@color/naranja"
+    android:ems="10"
+    android:inputType="text" />
+
+<Button
+    android:id="@+id/Guardar"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/button3"
+    android:layout_below="@+id/edtcategoria"
+    android:layout_marginTop="17dp"
+    android:background="@color/azul_oscuro"
+    android:contentDescription="@string/descripcion"
+    android:onClick="Guardar"
+    android:text="@string/Guardar"
+    android:textColor="@color/blanco" />
+
+</RelativeLayout>

@@ -36,6 +36,20 @@ public class DashboardActivity extends Activity {
     		
         	btnLogout = (Button) findViewById(R.id.btnLogout);
         	
+        	btn_pla.setOnClickListener(new View.OnClickListener() {
+				
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					Intent  audio = new Intent(getApplicationContext(), ServicioAudio.class);
+					
+					startActivity(audio);
+					finish();
+					
+				}
+			});
+        	
+        	
+        	
         	btnLogout.setOnClickListener(new View.OnClickListener() {
     			
     			public void onClick(View arg0) {
